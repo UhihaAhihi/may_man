@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Xỉu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Chơi Tài Xỉu</h1>
+    <p>Tài Xỉu: Dự đoán tổng số của 2 xúc xắc</p>
+    <p>Số dư: <span id="currencyAmount">100</span></p>
+    
+    <label for="betAmount">Số tiền đặt cược:</label>
+    <input type="number" id="betAmount" value="10" min="1">
+    
+    <label for="betType">Chọn loại cược:</label>
+    <select id="betType">
+        <option value="tai">Tài</option>
+        <option value="xiu">Xỉu</option>
+    </select>
+    
+    <button id="rollButton">Lăn Xúc Xắc</button>
+    <button id="resetButton">Reset Trò Chơi</button>
+    
+    <div id="diceImages"></div>
+    
+    <h2>Kết quả</h2>
+    <p>Tổng: <span id="scoreText"></span></p>
+    <p>Kết quả: <span id="resultText"></span></p>
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
